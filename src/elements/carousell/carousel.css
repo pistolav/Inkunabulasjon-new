@@ -1,0 +1,91 @@
+
+.carousel__controls{
+    display: flex;
+    position: absolute;
+    border: 1px solid red;
+    bottom: 5%;
+    right: 15%;
+}
+.carousel__controls button{
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: blue;
+    cursor: pointer;
+    outline: none;
+    margin: 0 1rem;
+}
+
+.carousel__controls button:hover{
+    color: #f1f1f1;
+}
+
+@keyframes show-img {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.scroll-fade-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+.scroll-fade-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100%;
+    scroll-snap-align: start;
+    opacity: 1;
+    transition: opacity 3s ease-out !important;
+}
+
+.content {
+    font-size: 48px;
+}
+
+.scroll-fade-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.scroll-fade-item:last-child {
+    margin-right: 0;
+}
+
+.scroll-fade-item:last-child .content {
+    color: red;
+}
+
+.dot-container {
+    z-index: 10;
+    display: flex !important;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align at the bottom */
+    height: 200px; /* Set a fixed height for the container */
+}
+
+.dot-row {
+    display: flex; /* Display dots in a row */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%; /* Make the dot round */
+    margin: 0 5px; /* Adjust the margin between dots */
+}
+
+.dot_active{
+    background-color: red;
+}
