@@ -76,8 +76,6 @@ const Home = () => {
     }, [isInViewInfo, isInViewCollection, isInViewTimeline, isInViewContact, inView]);
 
 
-
-
     return (
         <div className="home app">
             <Logo/>
