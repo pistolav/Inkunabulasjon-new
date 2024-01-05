@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import './carousel.css';
 import Cart1 from "./carts/cart1";
 import Cart2 from "./carts/cart2";
-import img from "../../media/40.jpg";
+import img from "../image/images/Default.jpg";
 
 const Carousel = () => {
 

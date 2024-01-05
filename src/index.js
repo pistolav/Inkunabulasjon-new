@@ -12,6 +12,9 @@ root.render(
           <Helmet>
                 <title>Inkunabulasjon</title>
               <meta charSet={"utf-8"}/>
+              <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet"/>
               <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous"/>
             </Helmet>
             <App />

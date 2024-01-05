@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Flickr API
+### `Key: affbc4b8099f913c59c5956cfdb1f570`
+### `Secret: 82ec4ff83d6bf6f1`
+
 
 ## Available Scripts
 

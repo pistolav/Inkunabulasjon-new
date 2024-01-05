@@ -1,13 +1,25 @@
+:root{
+    --color-light: #fcf7f2;
+    --color-light-alt: #eddcc0;
+    --color-dark: #994b29;
+    --color-dark-alt: #613716;
+}
+
 html{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: var(--color-light);
 }
 
 section{
   transition-duration: 5s;
   scroll-snap-align: start;
   overflow-y: hidden;
+}
+
+.App {
+  margin: 0 10% 5% 10%;
 }
 
 .logo {
@@ -35,11 +47,9 @@ section{
 .info {
   background: #61dafb;
 }
-
 .contact {
   background: darkolivegreen;
 }
-
 .collection {
   background: mediumvioletred;
 }

@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import {init} from "emailjs-com";
 init("5ewBIm4qQExPahOYi");
 
-const Contact = () => {
+const Contact = ({element}) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -12,7 +12,13 @@ const Contact = () => {
     const [phone, setPhone] = useState("");
     const [additional, setAdditional] = useState("");
 
+
     const submit = () => {
+        let ref_info = "Sendt fra hovedside";
+        if (element && element.Nummer){
+            ref_info = element.Nummer + " Åpen da mld. ble sendt.";
+        }
+
         if (name && email && message && isValidEmail(email)) {
             const serviceId = "service_ui43leq";
             const templateId = "template_jj8e0th";
@@ -23,7 +29,7 @@ const Contact = () => {
                 message: message,
                 from_phone: phone,
                 custom_value: additional,
-                ref_info: "Generelt",
+                ref_info: ref_info,
             }
             emailjs.send(serviceId, templateId, templateParams, p_key)
                 .then(r => console.log(r))
@@ -46,7 +52,6 @@ const Contact = () => {
             <input type="text" placeholder="E-post" value={email} onChange={event => {setEmail(event.target.value)}}/>
             <input type="text" placeholder="Telefon" value={phone} onChange={event => {setPhone(event.target.value)}}/>
             <textarea placeholder="Melding" value={message} onChange={event => {setMessage(event.target.value)}}/>
-            <textarea placeholder="Tilleggsinformasjon" value={additional} onChange={event => {setAdditional(event.target.value)}}/>
             <button onClick={submit}>Send</button>
             <span>{emailSent ? "E-post sendt" : ""}</span>
         </div>

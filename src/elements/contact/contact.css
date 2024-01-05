@@ -1,12 +1,7 @@
-/* Styling for the contact form */
 .contact-form {
-    width: 300px;
-    margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
+    margin: auto 1vw auto auto;
 }
 
 .contact-form input[type="text"],
@@ -14,8 +9,13 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-light-alt);
     border-radius: 3px;
+}
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-dark-alt);
 }
 
 .contact-form textarea {
@@ -23,7 +23,7 @@
 }
 
 .contact-form button {
-    background-color: #007bff;
+    background-color: var(--color-dark-alt);
     color: white;
     border: none;
     border-radius: 3px;
@@ -33,12 +33,10 @@
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: var(--color-dark);
 }
 
 .contact-form span {
     display: block;
     margin-top: 10px;
-    color: #007bff;
-    font-weight: bold;
 }

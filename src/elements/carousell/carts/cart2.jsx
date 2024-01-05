@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../media/40.jpg';
+import img from '../../image/images/Default.jpg';
 
 const Cart2 = () => {
     return (

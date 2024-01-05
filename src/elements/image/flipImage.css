@@ -1,0 +1,78 @@
+.grid-modal-image{
+    display: block;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+
+.grid-modal-image-container{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-modal-image-front, .grid-modal-image-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    height: auto;
+    width: auto;
+}
+.grid-modal-image-front {
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.grid-modal-image-back {
+    transform: rotateY(180deg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image{
+    height: auto;
+    width: auto;
+}
+
+div>div{
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div>img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.page{
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    max-height: 75vh !important;
+}
+img{
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    max-height: 80vh !important;
+}
