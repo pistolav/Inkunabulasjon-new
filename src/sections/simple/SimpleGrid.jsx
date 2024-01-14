@@ -119,7 +119,10 @@ const Modal = props => {
                     }>&#8250;</button>
                 </div>
                 <div className="grid-modal-footer">
-                    <h3>Footer</h3>
+                    <button className="grid-modal-button modal-button-info-switch">Se bilde</button>
+                    <button className="grid-modal-button modal-button-info-switch">Se info</button>
+                    <button className="grid-modal-button modal-button-info-switch">Ta kontakt</button>
+
                 </div>
             </div>
         </div>
@@ -154,10 +157,9 @@ const RightContent = (props) => {
                     </div>
                     <div className="inline">
                         <p>År:</p>
-                        <p>{props.element.Date}</p>
+                        <p>{props.element.Bakside}</p>
                     </div>
                     <div className="inline">
-                        <p>Info:</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda, blanditiis dicta eveniet facere fugiat incidunt itaque iure, mollitia nam natus nobis numquam odio reiciendis similique soluta sunt voluptas!</p>
                     </div>
                 </div>

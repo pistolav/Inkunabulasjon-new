@@ -8,7 +8,6 @@ function ImageService({imageName, side="front"}) {
     }else {
         string+= "_1";
     }
-    console.log("ImageService", "./images/Frilagt_Inkunabula_"+ string+ ".png");
 
     try {
         const image = require("./images/Frilagt_Inkunabula_" + string + ".png");
@@ -18,6 +17,7 @@ function ImageService({imageName, side="front"}) {
             </div>
         );
     }catch (e) {
+        console.log("Error dor image", string);
         return (
             <div className="image">
                 <img src={error} alt={error} />

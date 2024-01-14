@@ -44,9 +44,6 @@ section{
   scroll-snap-align: start;
   transition: opacity 3s ease-out;
 }
-.info {
-  background: #61dafb;
-}
 .contact {
   background: darkolivegreen;
 }
